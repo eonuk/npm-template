@@ -4,7 +4,8 @@
   "description": "A template for an NPM library",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "prepublish": "node_modules/@babel/cli/bin/babel.js src --out-dir lib"
   },
   "repository": {
     "type": "git",
@@ -15,5 +16,11 @@
   "bugs": {
     "url": "https://github.com/eonuk/npm-template/issues"
   },
-  "homepage": "https://github.com/eonuk/npm-template#readme"
+  "homepage": "https://github.com/eonuk/npm-template#readme",
+  "devDependencies": {
+    "@babel/cli": "^7.2.3",
+    "@babel/core": "^7.3.4",
+    "@babel/node": "^7.2.2",
+    "@babel/preset-env": "^7.3.4"
+  }
 }
