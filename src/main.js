@@ -1,5 +1,7 @@
 export default class Main {
     constructor() {
-        console.log("hello world");
+        let a = 1;
+        let b = 2;
+        return a + b;
     }
 }
